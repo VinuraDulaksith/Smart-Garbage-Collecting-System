@@ -33,15 +33,26 @@ class MapSampleState extends State<MapSample> {
   int _polylineIdCounter = 1;
 
   static final CameraPosition _kGooglePlex = CameraPosition(
-    target: LatLng(6.830118, 79.880083),
-    zoom: 14.4746,
+    //children[];
+    target: LatLng(7.8731, 80.7718), // Sri lanka (First view once map load)
+    zoom: 7.4746, // Zoom level
+    //target: LatLng(6.8511, 79.9212),
+    //zoom: 14.4746,
   );
 
   @override
   void initState() {
     super.initState();
-
-    _setMarker(LatLng(6.830118, 79.880083));
+    _setMarker(LatLng(5.9496, 80.5469));//Mathara
+    _setMarker(LatLng(7.2906, 80.6337));//Kandy
+    _setMarker(LatLng(7.4818, 80.3609));//Kurunagala
+    _setMarker(LatLng(6.9934, 81.0550));//Badulla
+    _setMarker(LatLng(8.3114, 80.4037));//Anuradhapura
+    _setMarker(LatLng(8.5874, 81.2152));//Trinco
+    _setMarker(LatLng(6.1429, 81.1212));//Hambanthota
+    _setMarker(LatLng(6.7056, 80.3847));//Rathnapura
+    _setMarker(LatLng(6.8511, 79.9212)); //Maharagama Location
+    _setMarker(LatLng(6.830118, 79.880083)); // Dehiwala Location
   }
 
   void _setMarker(LatLng point) {
