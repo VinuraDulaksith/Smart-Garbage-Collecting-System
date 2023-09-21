@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:garbage_collector_1/Screen/additems_customer_screen.dart';
 import 'package:garbage_collector_1/Screen/signin_screen.dart';
-
+import 'package:garbage_collector_1/map/mapsample.dart';
 import '../utils/colours.dart';
 
 class CustomerHomeScreen extends StatefulWidget {
@@ -132,7 +132,10 @@ class _CustomerHomeScreenState extends State<CustomerHomeScreen> {
                 label: Text("| Collecting Points",
                 style: TextStyle(fontSize: 18),),
                 onPressed: () {
-                //  _launchUnityApp();
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => MapSample()),
+                  );
                 },
                 style: ElevatedButton.styleFrom(
                   padding: EdgeInsets.all(20.0),

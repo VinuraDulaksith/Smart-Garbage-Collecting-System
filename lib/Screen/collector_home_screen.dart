@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:garbage_collector_1/Screen/signin_screen.dart';
-
+import 'package:garbage_collector_1/map/mapsample.dart';
 import '../utils/colours.dart';
 
 class CollectorHomeScreen extends StatefulWidget {
@@ -106,10 +106,10 @@ class _CollectorHomeScreenState extends State<CollectorHomeScreen> {
                 label: Text("| Collect Items",
                   style: TextStyle(fontSize: 18),),
                 onPressed: () {
-                  // Navigator.push(
-                  //   context,
-                  //   MaterialPageRoute(builder: (context) => ShoppingCartScreen()),
-                  //     );
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => MapSample()),
+                      );
                 },
                 style: ElevatedButton.styleFrom(
                   padding: EdgeInsets.all(20.0),
