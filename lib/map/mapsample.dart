@@ -102,7 +102,7 @@ class MapSampleState extends State<MapSample> {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: AppBar(
-        title: Text('Google Maps'),
+        title: Text('Google Map'),
       ),
       body: Column(
         children: [
